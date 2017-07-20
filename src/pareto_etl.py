@@ -1,3 +1,5 @@
+import json
+import numpy
 import petl as etl
 
 def read_csv(file):
@@ -5,6 +7,12 @@ def read_csv(file):
 
 def write_csv(table, file):
 	return etl.tocsv(table, file)
+
+def read_json(file):
+	json_file = open(file)
+	json_str = json_file.read()
+	json_data = json.loads(json_str)
+	return json_data
 
 def headers(table):
 	return etl.header(table)
