@@ -4,7 +4,7 @@ def load_csv(file):
 	return etl.fromcsv(file)
 
 def rename_headers(table, mappings):
-	return etl.rename(table, {'DONOR_ID':'URN', 'ADDRESS':'STREET', 'GENDER':'SEX'})
+	return etl.rename(table, mappings)
 
 def map_values(table, column, mappings):
 	return etl.convert(table, column, mappings)
