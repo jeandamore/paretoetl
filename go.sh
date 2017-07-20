@@ -5,4 +5,7 @@ pushd bin
 source activate
 popd
 pip install petl
-python src/test.py
+pushd src
+python -m unittest paretoetl_test
+python test.py
+popd

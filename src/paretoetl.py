@@ -3,6 +3,9 @@ import petl as etl
 def load_csv(file):
 	return etl.fromcsv(file)
 
+def headers(table):
+	return etl.header(table)
+
 def rename_headers(table, mappings):
 	return etl.rename(table, mappings)
 

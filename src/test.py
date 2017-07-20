@@ -1,6 +1,6 @@
 import paretoetl as petl
 
-donors = petl.load_csv('data/donors.csv')
+donors = petl.load_csv('../data/donors.csv')
 print donors
 
 donors_base = petl.rename_headers(donors, {'DONOR_ID':'URN', 'ADDRESS':'STREET', 'GENDER':'SEX'})
