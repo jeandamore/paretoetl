@@ -1,7 +1,10 @@
 import petl as etl
 
-def load_csv(file):
+def read_csv(file):
 	return etl.fromcsv(file)
+
+def write_csv(table, file):
+	return etl.tocsv(table, file)
 
 def headers(table):
 	return etl.header(table)

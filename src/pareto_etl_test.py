@@ -1,5 +1,5 @@
 import unittest
-import paretoetl as petl
+import pareto_etl as petl
 
 class ParetoEtlTest(unittest.TestCase):
 
