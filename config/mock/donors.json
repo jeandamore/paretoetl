@@ -1,0 +1,23 @@
+{
+	"headers": {
+		"donor_id": "urn",
+		"address": "street",
+		"gender": "sex"
+	},
+	"mappings": [
+		{
+			"field": "sex",
+			"values": {
+				"Male": "M",
+				"Female": "F"
+			}
+		}
+	],
+	"concats": [
+		{
+			"new_field": "name",
+			"old_field_left": "first_name",
+			"old_field_right": "last_name" 
+		}
+	]
+}
