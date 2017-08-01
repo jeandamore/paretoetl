@@ -1,5 +1,5 @@
 export HOMEBREW_NO_AUTO_UPDATE=1 
-#brew install python
+brew install python
 pip install virtualenv
 virtualenv .
 pushd bin
