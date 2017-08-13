@@ -1,6 +1,7 @@
 export HOMEBREW_NO_AUTO_UPDATE=1 
 set -e
 brew install python
+python -m ensurepip
 pip install virtualenv
 virtualenv .
 pushd bin
