@@ -25,5 +25,9 @@ donors = load_donors(client)
 donors_base = transform_donors(client, donors)
 save_donors_base(client, donors_base)
 
-print donors
-print donors_base
+try:
+	print donors
+	print donors_base
+	sys.stdout.flush()
+except:
+	pass
