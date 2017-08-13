@@ -2,7 +2,7 @@ import sys
 import pareto_etl as petl
 
 def load_donors(client):
-	return petl.read_csv('../data/'+client+'/donors.csv')
+	return petl.read_csv('../../paretodata/'+client+'/donors.csv')
 
 def load_donors_config(client):
 	return petl.read_json('../config/'+client+'/donors.json')
@@ -17,7 +17,7 @@ def transform_donors(client, donors):
 	return donors_base
 
 def save_donors_base(client, table):
-	return petl.write_csv(table, '../data/'+client+'/donors_base.csv')
+	return petl.write_csv(table, '../../paretodata/'+client+'/donors_base.csv')
 
 
 client = sys.argv[1]

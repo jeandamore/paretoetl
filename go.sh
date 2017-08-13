@@ -12,6 +12,10 @@ fi
 pip install petl
 pip install numpy
 pushd src
-python -m unittest pareto_etl_test
-python $1.py $2
+
+if [ -z "$1" ]; then
+	python -m unittest pareto_etl_test
+else
+	python $1.py $2
+fi
 popd
