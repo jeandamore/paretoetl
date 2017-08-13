@@ -1,0 +1,3 @@
+curl 'http://localhost:8153/go/api/material/notify/git' \
+      -X POST \
+      -d "repository_url=git@github.com:jeandamore/paretoetl.git"
